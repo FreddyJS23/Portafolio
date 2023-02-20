@@ -1,0 +1,486 @@
+
+@font-face {
+    font-family:'Quicksand' ;
+    src: url(font/Quicksand-Regular.ttf);
+}
+@font-face {
+    font-family:'Quicksand-Bold' ;
+    src: url(font/Quicksand-Bold.ttf);
+}
+@font-face {
+    font-family: 'PermanentMarker';
+    src: url(font/PermanentMarker-Regular.ttf);
+}
+
+:root{
+    --primary:rgb(17,47,145);
+    --secondary:rgb(45,108,223);
+    --fondo1:rgb(245,245,245);
+    --fondo2:rgb(242,242,240);
+    --fontWhite:rgb(255,255,255);
+    --fontBlack:rgb(0,0,0);
+    --shadow: rgba(45, 108, 223, 0.1) 0px 10px 15px -3px, rgba(17, 47, 145, 0.05) 0px 4px 6px -2px;
+   
+}
+    
+body{
+    background:linear-gradient(to right, rgb(236, 233, 230), rgb(255, 255, 255));
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe277 100%);
+}
+
+*{
+    font-family: 'Quicksand';
+}
+
+h2{
+    font-family: 'PermanentMarker';
+    color: var(--secondary);
+    cursor: default;
+    
+}
+p{
+    cursor: default;
+}
+
+.text-bold{
+font-family:'Quicksand-Bold';
+cursor: default;
+}
+.text-small
+.text-small-bold{
+font-size: .688rem;
+}
+
+.text-small-bold{
+font-family:'Quicksand-Bold';
+}
+/* ---------------------------- barra navegacion ---------------------------- */
+.nav{
+    background: var(--primary);
+    margin-top: 0;
+}
+
+.container-navLink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-right: 1rem;
+  
+}
+.navLink{
+    color: var(--fontWhite);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    text-decoration: none;
+    transition: .2s ease;
+    position: relative;
+}
+
+   .navLink:hover{
+    color: var(--secondary);
+    
+} 
+
+
+.navLink:before {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    content: '';
+  
+   width: 100%;
+   border-bottom: 2px solid var(--secondary);
+   border-radius: 3px;
+   transform: scaleX(0);
+   transform-origin: center;
+    z-index: 1;
+    
+    transition:all 0.2s ease-in-out;
+    
+}
+.navLink:hover:before {
+    
+    transform: scaleX(1);
+    
+}
+
+.logo{
+width: 7rem;
+margin-left: 1rem;
+}
+@keyframes shake-bottom {
+    0%,
+    100% {
+     
+              transform: rotate(0deg);
+      
+              transform-origin: 50% 100%;
+    }
+    10% {
+    
+              transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+   
+              transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+     
+              transform: rotate(4deg);
+    }
+    80% {
+      
+              transform: rotate(-2deg);
+    }
+    90% {
+     
+              transform: rotate(2deg);
+    }
+  }
+
+  .logo:hover{
+  
+	        animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+
+/* --------------------------- carta presentacion --------------------------- */
+.container-presentacion{
+
+width: 36rem;
+height: 19rem;
+margin-left: 3rem;
+margin-top: 10rem;
+box-shadow: var(--shadow);
+padding: 1.7rem 1.8rem 1rem;
+display: flex;
+flex-direction: column;
+}
+.container-presentacion h2{
+    font-size: 2.625rem;
+}
+
+.container-presentacion p{
+    font-size: 1.5rem;
+}
+.container-presentacion p > cite{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-left: 10rem;
+}
+.container-ilustracion-sentado{
+    position: absolute;
+  align-self: flex-end;
+   margin-right: -5.3rem;
+  margin-top: -6.5rem; 
+
+    
+}
+.container-fotoPerfil{
+  
+    width: 36.063rem;
+    height: 24.588rem;
+    margin-left: 2rem;
+    margin-top: 4.2rem;
+    
+    
+}
+
+.fotoPerfil-container-foto{
+   position:absolute;
+   z-index: 1;
+    margin-top: 5.1rem;
+   margin-left: 10.3rem;
+    width: 14.776rem;
+    height: 13.541;
+}
+.container-fotoPerfil-codigo{
+    position: absolute;
+    margin-left: 3.1rem;
+    margin-top: 1.8rem;
+
+    
+}
+.container-fotoPerfil-codigo p{
+    color: var(--secondary);
+    opacity: 50%;
+
+}
+
+/* -------------------------------- sobre mi -------------------------------- */
+
+.container-sobreMi{
+    
+    margin: auto;
+    margin-top: 5rem;
+    width: 45.313rem;
+    height: 7rem;
+     padding-left:2rem ;
+    padding-right:2rem;
+    text-align: center;
+    
+}
+.container-sobreMi p{
+    font-size: 1.5rem;
+}
+
+.botonCv{
+    color: var(--fontWhite);
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: var(--secondary);
+    width: 8rem;
+    height: 2rem;
+    border-radius: 30px;
+    border: none;
+    transition: .2s;
+}
+.botonCv:hover{
+    background-color: var(--primary);
+} 
+
+/* ------------------------------- habilidades ------------------------------ */
+
+.container-habilidades{
+    width: 70rem;
+    height: 22rem;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 3rem;
+}
+.container-habilidades h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   text-align: center;
+}
+.habilidades-tegnologias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.625rem;
+    width: 63.636rem;
+    height: 9.313rem;
+    margin: auto;
+    
+}
+
+.habilidades-tegnologias div{
+box-shadow: var(--shadow);
+width: 6.25rem;
+height: 7.5rem;
+text-align: center;
+}
+
+.habilidades-tegnologias div img{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    width: 3.25rem;
+    height: 3.25rem;
+    transition: .3s all;
+
+}
+.svg-figma{
+    display: inline-block;
+    width: 3.25rem;
+    height: 3.25rem;
+    background-size:cover;
+    background-image: url("svg/figma.svg");
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    transition: .3s all;
+}
+.habilidades-tegnologias .tegnologia1{
+    width: 6.563rem;
+    transform: rotate(-29deg);
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+.habilidades-tegnologias .tegnologia2{
+    width: 5.625rem;
+    transform: rotate(-3deg);
+    margin-top: .5rem;
+   
+}
+
+.container-ilustracion-habilidades{
+ width: 8.5rem;
+ height: 8.5rem;
+ margin-left: .1rem;
+
+}
+
+
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+
+
+.tegnologia1:hover .tegnologia-icon-html5{
+    filter: invert(38%) sepia(44%) saturate(3959%) hue-rotate(349deg) brightness(93%) contrast(90%);
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.tegnologia2:hover .tegnologia-icon-css3{
+    filter: invert(26%) sepia(81%) saturate(2638%) hue-rotate(217deg) brightness(100%) contrast(90%);
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.tegnologia:hover .tegnologia-icon-bootstrap{
+    filter: invert(18%) sepia(100%) saturate(5744%) hue-rotate(260deg) brightness(104%) contrast(95%);
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.tegnologia:hover .tegnologia-icon-javascript{
+    filter: invert(82%) sepia(43%) saturate(636%) hue-rotate(359deg) brightness(105%) contrast(88%);
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.tegnologia:hover .svg-figma{
+   background-image: url("svg/figma-color.svg");
+   animation: rotate-center 0.6s ease-in-out both;
+}
+
+.tegnologia:hover .tegnologia-icon-figma{
+    filter: invert(45%) sepia(12%) saturate(1351%) hue-rotate(189deg) brightness(83%) contrast(77%);
+    animation: rotate-center 0.6s ease-in-out both;
+}
+.tegnologia:hover .tegnologia-icon-git{
+    filter: invert(32%) sepia(18%) saturate(6346%) hue-rotate(345deg) brightness(118%) contrast(89%);
+    animation: rotate-center 0.6s ease-in-out both;
+
+}
+
+.tegnologia:hover .tegnologia-icon-php{
+    filter: invert(68%) sepia(8%) saturate(1430%) hue-rotate(191deg) brightness(86%) contrast(82%);
+    animation: rotate-center 0.6s ease-in-out both;
+
+}
+
+.tegnologia:hover .tegnologia-icon-mysql{
+    filter: invert(24%) sepia(78%) saturate(2183%) hue-rotate(169deg) brightness(95%) contrast(103%);
+    animation: rotate-center 0.6s ease-in-out both;
+
+}
+
+
+/* -------------------------------- proyectos ------------------------------- */
+
+.container-proyectos{
+   margin: auto;
+    margin-top: 4rem;
+   width: 64rem;
+   height: 33rem;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.container-proyectos h2{
+    text-align: center;
+}
+.container-ilustracion-proyecto{
+   
+    position: absolute;
+    margin-right: 1rem;
+   z-index: 4;
+    margin-top: -3.3rem;
+    align-self: flex-end;
+    
+}
+
+.carrusel{
+   box-shadow: var(--shadow);
+}
+
+/* -------------------------------- contacto ------------------------------- */
+
+.container-contacto{
+   display: flex;
+   flex-direction: column;
+   width: 21.125rem;
+   height: 10.063rem;
+   margin-top: 2rem;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   justify-content: center;
+  margin: auto;
+  margin-top: 3rem;
+}
+.container-contacto h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contacto-redSocial{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.875rem;
+    
+}
+.contacto-redSocial img,.svg-gmail{
+    transition: .3s all;
+    
+}
+.container-contacto-cita{
+    margin-top: .8rem;
+    width: 19.188rem;
+}
+.container-contacto-cita p cite{
+   display: flex;
+  justify-content: center;
+}
+
+.svg-gmail{
+    display: inline-block;
+    background-image: url("svg/gmail.svg");
+    background-size:cover;
+    width: 3.938rem;
+    height: 3.938rem;
+}
+
+
+.redSocial-github:hover{
+  
+    filter: invert(36%) sepia(22%) saturate(1062%) hue-rotate(222deg) brightness(95%) contrast(90%);
+  transform: translateY(-4px);
+}
+.redSocial-linkedin:hover{
+  
+    filter: invert(31%) sepia(95%) saturate(535%) hue-rotate(159deg) brightness(96%) contrast(93%);
+    transform: translateY(-4px);
+
+}
+.redSocial-whatsapp:hover{
+  
+    filter: invert(89%) sepia(16%) saturate(4161%) hue-rotate(73deg) brightness(89%) contrast(85%);
+    transform: translateY(-4px);
+}
+.svg-gmail:hover{
+    background-image: url("svg/gmail-color.svg");
+    transform: translateY(-4px);
+    
+}
+
+/* --------------------------------- footer --------------------------------- */
+.container-footer{
+    background: var(--primary);
+    color: var(--fontWhite);
+    text-align: center;
+    height: 1.625rem;
+    margin-top: 1rem;
+    padding-bottom: 10px;
+   
+}
