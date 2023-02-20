@@ -15,8 +15,6 @@
 :root{
     --primary:rgb(17,47,145);
     --secondary:rgb(45,108,223);
-    --fondo1:rgb(245,245,245);
-    --fondo2:rgb(242,242,240);
     --fontWhite:rgb(255,255,255);
     --fontBlack:rgb(0,0,0);
     --shadow: rgba(45, 108, 223, 0.1) 0px 10px 15px -3px, rgba(17, 47, 145, 0.05) 0px 4px 6px -2px;
@@ -230,7 +228,7 @@ flex-direction: column;
     font-size: 1.5rem;
 }
 
-.botonCv{
+.boton{
     color: var(--fontWhite);
     font-weight: 700;
     font-size: 1rem;
@@ -241,7 +239,7 @@ flex-direction: column;
     border: none;
     transition: .2s;
 }
-.botonCv:hover{
+.boton:hover{
     background-color: var(--primary);
 } 
 
@@ -432,6 +430,7 @@ text-align: center;
 }
 .contacto-redSocial img,.svg-gmail{
     transition: .3s all;
+    cursor: pointer;
     
 }
 .container-contacto-cita{
@@ -483,4 +482,62 @@ text-align: center;
     margin-top: 1rem;
     padding-bottom: 10px;
    
+}
+
+/* ---------------------------- formulario gmail ---------------------------- */
+#input-nombre,
+#input-correo,
+#input-mensaje{
+
+border: none;
+border-bottom: 1px solid var(--secondary);
+}
+
+
+#input-nombre:focus,
+#input-correo:focus,
+#input-mensaje:focus{
+
+border-color:var(--primary);
+box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.logo-azul{
+    width: 10rem;
+    height: 5rem;
+}
+/* abrir modal */
+  @keyframes scale-in-ver-center {
+    0% {
+     
+              transform: scaleY(0);
+      opacity: 1;
+    }
+    100% {
+    
+              transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+  .scale-in-ver-center {
+	
+	        animation: scale-in-ver-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* cerrar modal */
+  @keyframes scale-out-vertical {
+    0% {
+    
+              transform: scaleY(1);
+      opacity: 1;
+    }
+    100% {
+     
+              transform: scaleY(0);
+      opacity: 1;
+    }
+  }
+  .scale-out-vertical {
+	
+	        animation: scale-out-vertical 0.25s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
