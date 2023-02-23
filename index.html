@@ -15,195 +15,220 @@
 </head>
 
 <body>
-    <!-- -------------------------- barra navegacion --------------------------- -->
-    <nav class="navbar navbar-expand-lg navbar-light nav">
-        <div class="container-fluid">
-            <a class="navbar-brand logo" href="#"><img src="styles/svg/logo.svg" class="logo" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- -------------------------- barra navegación --------------------------- -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light nav">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#"><img src="styles/svg/logo.svg" class="logo" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse container-navLink" id="navbarSupportedContent">
-                <ul class="navbar-nav ">
-                    <li class="nav-item">
-                        <a class="navLink" href="#sobreMi">Sobre mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navLink" href="#habilidades">Habilidades</a>
-                    </li>
+                <div class="collapse navbar-collapse container-navLink" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="navLink" href="#sobreMi">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navLink" href="#habilidades">Habilidades</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="navLink " href="#proyectos">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navLink" href="#contacto">Contacto</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="navLink " href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navLink" href="#contacto">Contacto</a>
+                        </li>
 
-                </ul>
+                    </ul>
 
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ------------------------ carta de presentación ------------------------ -->
+
+        <section class="seccion-presentacion ">
+            <div class="container-presentacion ">
+                <div class="container-ilustracion-sentado ">
+                    <img src="styles/svg/sentado.svg" alt="sentado">
+                </div>
+                <h2>Freddy Solarte</h2>
+                <p class="text-bold">Full stack developer</p>
+                <div class="container-presentacion-cita">
+                    <p class="text-normal">“La tecnología, como el arte, es un ejercicio altísimo de la imaginación
+                        humana” <cite>Daniel Bell</cite></p>
 
 
-    <!-- ------------------------ carta de presentacion ------------------------ -->
-    <div class="d-flex">
-        <div class="container-presentacion" >
-            <div class="container-ilustracion-sentado ">
-                <img src="styles/svg/sentado.svg" alt="sentado">
+                </div>
             </div>
-            <h2>Freddy Solarte</h2>
-            <p class="text-bold">Full stack developer</p>
-            <div class="container-presentacion-cita">
-                <p class="text-normal">“La tecnología, como el arte, es un ejercicio altísimo de la imaginación
-                    humana” <cite>Daniel Bell</cite></p>
 
+            <div class="container-fotoPerfil ">
+                <div class="fotoPerfil-container-foto">
+                    <img src="styles/svg/foto perfil.svg" alt="foto" class="foto">
+                </div>
+                <div class="container-fotoPerfil-codigo">
+                    <p id="code"></p>
+                </div>
+            </div>
+        </section>
 
-            </div>
-        </div>
+        <!-- ------------------------------ sobre mi ------------------------------- -->
+        <section>
+            <div class="container-sobreMi " id="sobreMi">
+                <p class="text-normal">Amante de la tecnología en busca de proyectos y nuevos desafios que pongan a
+                    prueba mis
+                    capacidades para asi fomentar mi crecimiento laboral y personal</p>
+                <div class="container-botonCv">
+                    <a href="https://drive.google.com/file/d/1qS21uYKEJJjX601UC1eTO4kfuxuizujM/view?usp=share_link"
+                        target="_blank"> <input class="boton" type="button" value="Descargar cv"></a>
 
-        <div class="container-fotoPerfil ">
-            <div class="fotoPerfil-container-foto">
-                <img src="styles/svg/foto perfil.svg" alt="foto" class="foto" >
+                </div>
             </div>
-            <div class="container-fotoPerfil-codigo">
-                <p id="code"></p>
-            </div>
-        </div>
-    </div>
+        </section>
+        <!-- ----------------------------- habilidades ----------------------------- -->
+        <section>
+            <div class="container-habilidades container" id="habilidades">
+                <h2>Habilidades</h2>
+                <div class="habilidades-tegnologias ">
+                    <div class="tegnologia1">
+                        <img src="styles/svg/html5.svg" alt="tegnologia " class="tegnologia-icon-html5">
+                        <p class="text-bold">HTML5</p>
+                    </div>
+                    <div class="tegnologia2">
+                        <img src="styles/svg/css3.svg" alt="tegnologia" class="tegnologia-icon-css3">
+                        <p class="text-bold">CSS3</p>
+                    </div>
+                    <div class="tegnologia">
+                        <img src="styles/svg/bootstrap.svg" alt="tegnologia" class="tegnologia-icon-bootstrap">
+                        <p class="text-bold">Bootstrap</p>
+                    </div>
+                    <div class="tegnologia">
+                        <img src="styles/svg/javascript.svg" alt="tegnologia" class="tegnologia-icon-javascript">
+                        <p class="text-bold">Javascript</p>
+                    </div>
+                    <div class="tegnologia tegnologia-figma">
 
-    <!-- ------------------------------ sobre mi ------------------------------- -->
-    <div class="container-sobreMi container-fluid" id="sobreMi">
-        <p class="text-normal">Amante de la tecnología en busca de proyectos y nuevos desafios que pongan a prueba mis
-            capacidades para asi fomentar mi crecimiento laboral y personal</p>
-        <div class="container-botonCv">
-           <a href="https://drive.google.com/file/d/1qS21uYKEJJjX601UC1eTO4kfuxuizujM/view?usp=share_link" target="_blank"> <input class="boton" type="button" value="Descargar cv"></a>
-
-        </div>
-    </div>
-    <!-- ----------------------------- habilidades ----------------------------- -->
-    <div class="container-habilidades container" id="habilidades">
-        <h2>Habilidades</h2>
-        <div class="habilidades-tegnologias container ">
-            <div class="tegnologia1">
-                <img src="styles/svg/html5.svg" alt="tegnologia " class="tegnologia-icon-html5">
-                <p class="text-bold">HTML5</p>
-            </div>
-            <div class="tegnologia2">
-                <img src="styles/svg/css3.svg" alt="tegnologia" class="tegnologia-icon-css3">
-                <p class="text-bold">CSS3</p>
-            </div>
-            <div class="tegnologia">
-                <img src="styles/svg/bootstrap.svg" alt="tegnologia" class="tegnologia-icon-bootstrap">
-                <p class="text-bold">Bootstrap</p>
-            </div>
-            <div class="tegnologia">
-                <img src="styles/svg/javascript.svg" alt="tegnologia" class="tegnologia-icon-javascript">
-                <p class="text-bold">Javascript</p>
-            </div>
-            <div class="tegnologia">
-
-                <span class="svg-figma"></span>
-                <p class="text-bold">Figma</p>
-            </div>
-            <div class="tegnologia">
-                <img src="styles/svg/git.svg" alt="tegnologia" class="tegnologia-icon-git ">
-                <p class="text-bold">Git</p>
-            </div>
-            <div class="tegnologia">
-                <img src="styles/svg/php.svg" alt="tegnologia" class="tegnologia-icon-php">
-                <p class="text-bold">PHP</p>
-            </div>
-            <div class="tegnologia">
-                <img src="styles/svg/mysql.svg" alt="tegnologia" class="tegnologia-icon-mysql">
-                <p class="text-bold">Mysql</p>
-            </div>
-        </div>
-        <div class="container-ilustracion-habilidades ">
-            <img src="styles/svg/generando.svg" alt="generando habilidades" class="ilustracion-habilidades">
-        </div>
-    </div>
-
-
-    <!-- ------------------------------ proyectos ------------------------------ -->
-    <div class="container-proyectos container" id="proyectos">
-
-        <div class="container-ilustracion-proyecto">
-            <img src="styles/svg/proyectoCompletado.svg" alt="ilustacion proyecto" class="ilustracion-proyecto">
-        </div>
-        <h2>Proyectos</h2>
-
-        <div id="carouselId" class="carousel slide carrusel" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="First slide"></li>
-                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-                
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="styles/images/proyecto1.jpg" class="w-100 d-block  foto-proyecto" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Aplicacion web para registros y consultas para una institucion</h3>
-                        <p>Registra, consulta, edita, genera reportes y  funcion de backup de bd <a href="https://developing-cradle.000webhostapp.com/" target="_blank" class="text-bold linkProyecto"> Visitar</a></p>
+                        <span class="svg-figma"></span>
+                        <p class="text-bold">Figma</p>
+                    </div>
+                    <div class="tegnologia tegnologia-git">
+                        <img src="styles/svg/git.svg" alt="tegnologia" class="tegnologia-icon-git ">
+                        <p class="text-bold">Git</p>
+                    </div>
+                    <div class="tegnologia tegnologia-php">
+                        <img src="styles/svg/php.svg" alt="tegnologia" class="tegnologia-icon-php">
+                        <p class="text-bold">PHP</p>
+                    </div>
+                    <div class="tegnologia tegnologia-mysql">
+                        <img src="styles/svg/mysql.svg" alt="tegnologia" class="tegnologia-icon-mysql">
+                        <p class="text-bold">Mysql</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="styles/images/proximamente.jpg" class="w-100 d-block" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Proximamente...</h3>
-                        <!-- <p>Description</p> -->
+                <div class="container-ilustracion-habilidades ">
+                    <img src="styles/svg/generando.svg" alt="generando habilidades" class="ilustracion-habilidades">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ------------------------------ proyectos ------------------------------ -->
+        <section>
+            <div class="container-proyectos" id="proyectos">
+
+                <div class="container-ilustracion-proyecto">
+                    <img src="styles/svg/proyectoCompletado.svg" alt="ilustacion proyecto" class="ilustracion-proyecto">
+                </div>
+                <h2>Proyectos</h2>
+
+                <div id="carouselId" class="carousel slide carrusel" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                            aria-label="First slide"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="styles/images/proyecto1.jpg" class="w-100 d-block  foto-proyecto"
+                                alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Aplicacion web que permite registros y consultas para una institucion</h3>
+                                <p>Registra, consulta, edita, genera reportes y funcion de backup de bd <a
+                                        href="https://developing-cradle.000webhostapp.com/" target="_blank"
+                                        class="text-bold linkProyecto"> Visitar</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="styles/images/proximamente.jpg" class="w-100 d-block" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Próximamente...</h3>
+                                <!-- <p>Description</p> -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ------------------------------ contacto ------------------------------ -->
+        <section>
+            <div class="container-contacto container" id="contacto">
+                <h2>Contacto</h2>
+                <div class="contacto-redSocial">
+                    <div class="redSocial">
+                        <a href="https://www.linkedin.com/in/freddy-solarte-b86175180/" target="_blank"><img
+                                src="styles/svg/linkedin.svg" alt="linkedin" class="redSocial-linkedin"></a>
+                    </div>
+                    <div class="redSocial">
+                        <a href="https://github.com/FreddyJS23" target="_blank"><img src="styles/svg/github.svg"
+                                alt="github" class="redSocial-github"></a>
+                    </div>
+                    <div class="redSocial">
+                        <a href="https://wa.me/584247462023?text=Hola%20Freddy%20estoy%20interesado%20en%20tus%20servicios"
+                            target="_blank"><img src="styles/svg/whatsapp.svg" alt="whatsapp"
+                                class="redSocial-whatsapp"></a>
+                    </div>
+                    <div class="redSocial" id="gmail">
+
+                        <span class="svg-gmail"></span>
+
                     </div>
                 </div>
-              
+                <div class="container-contacto-cita">
+                    <p class="text-normal">“Las ideas son el 5%... la ejecución el 95%” <cite
+                            class="text-small-bold">Daniel Ek
+                            Fundador
+                            Spotify 2012.</cite></p>
+
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container-footer container-fluid">
+            <p class="text-small-bold">© 2023 FreddyJS Reservados todos los derechos</p>
         </div>
-    </div>
-
-
-
-    <!-- ------------------------------ contacto ------------------------------ -->
-    <div class="container-contacto container" id="contacto">
-        <h2>Contacto</h2>
-        <div class="contacto-redSocial">
-            <div class="redSocial">
-                <a href="https://www.linkedin.com/in/freddy-solarte-b86175180/" target="_blank"><img src="styles/svg/linkedin.svg" alt="linkedin" class="redSocial-linkedin"></a>
-            </div>
-            <div class="redSocial">
-                <a href="https://github.com/FreddyJS23" target="_blank"><img src="styles/svg/github.svg" alt="github" class="redSocial-github"></a>
-            </div>
-            <div class="redSocial">
-                <a href="https://wa.me/584247462023?text=Hola%20Freddy%20estoy%20interesado%20en%20tus%20servicios" target="_blank" ><img src="styles/svg/whatsapp.svg" alt="whatsapp" class="redSocial-whatsapp"></a>
-            </div>
-            <div class="redSocial" id="gmail">
-
-                <span class="svg-gmail"></span>
-
-            </div>
-        </div>
-        <div class="container-contacto-cita">
-            <p class="text-normal">“Las ideas son el 5%... la ejecución el 95%” <cite class="text-small-bold">Daniel Ek
-                    Fundador
-                    Spotify 2012.</cite></p>
-
-        </div>
-    </div>
-
-    
-
-    <div class="container-footer container-fluid">
-        <p class="text-small-bold">© 2023 FreddyJS Reservados todos los derechos</p>
-    </div>
+    </footer>
 
 
 
