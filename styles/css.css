@@ -91,7 +91,6 @@ p {
     bottom: 0;
     left: 0;
     content: '';
-
     width: 100%;
     border-bottom: 2px solid var(--secondary);
     border-radius: 3px;
@@ -743,7 +742,15 @@ margin-top: 4.2rem;
 
 @media only screen and (max-width:767px){
 
-   /* ------------------------------- habilidades ------------------------------ */
+   /* --------------------------------- navbar --------------------------------- */
+   .container-navLink{
+    justify-content: flex-start;
+   }
+   
+   .nav-item{
+    padding: 5px;
+   }
+    /* ------------------------------- habilidades ------------------------------ */
     .container-habilidades{
         height: 40rem;
        
@@ -794,6 +801,13 @@ margin-top: 4.2rem;
 
     width: 7.5rem;
     height: 5.656rem;
+}
+
+.tittle-carrusel{
+    font-size: 1rem;
+}
+.text-carrusel{
+    font-size: .7rem;
 }
 
     }
@@ -954,4 +968,12 @@ display: flex;
 .container-contacto-cita p cite{
     font-size: 12px;
 }
+
+.tittle-carrusel{
+    font-size: .8rem;
+}
+.text-carrusel{
+   display: none;
+}
+
 }
