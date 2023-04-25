@@ -302,13 +302,14 @@ margin-top: 4.2rem;
     justify-content: center;
     gap: 1.625rem;
     height: 9.313rem;
+    flex-wrap: wrap;
    
 
 }
 
 .habilidades-tegnologias div {
     box-shadow: var(--shadow);
-    width: 6.25rem;
+    width: 7.25rem;
     height: 7.5rem;
     text-align: center;
 }
@@ -349,7 +350,7 @@ margin-top: 4.2rem;
 
 .container-ilustracion-habilidades {
    align-self: flex-start;
-   margin-left: 1rem;
+   margin-left: -1rem;
 
   
 
@@ -414,6 +415,21 @@ margin-top: 4.2rem;
 
 .tegnologia:hover .tegnologia-icon-mysql {
     filter: invert(24%) sepia(78%) saturate(2183%) hue-rotate(169deg) brightness(95%) contrast(103%);
+    animation: rotate-center 0.6s ease-in-out both;
+
+}
+.tegnologia:hover .tegnologia-icon-react {
+    filter: invert(53%) sepia(93%) saturate(1073%) hue-rotate(151deg) brightness(108%) contrast(105%);
+    animation: rotate-center 0.6s ease-in-out both;
+
+}
+.tegnologia:hover .tegnologia-icon-nextjs {
+  
+    animation: rotate-center 0.6s ease-in-out both;
+
+}
+.tegnologia:hover .tegnologia-icon-laravel {
+    filter: invert(40%) sepia(15%) saturate(5870%) hue-rotate(335deg) brightness(102%) contrast(97%);
     animation: rotate-center 0.6s ease-in-out both;
 
 }
@@ -615,6 +631,8 @@ margin-top: 4.2rem;
     animation: scale-out-vertical 0.25s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
+
+
 /* ------------------------------ media querys ------------------------------ */
 @media only screen and (max-width:992px) {
     /* -------------------------- carta de presentacion ------------------------- */
@@ -680,11 +698,12 @@ margin-top: 4.2rem;
     width: 100%;
     height: 30.63rem;
     justify-content: initial;
+    margin-bottom: 10rem;
 }
 
 .habilidades-tegnologias {
  
-    gap: 1rem;
+    gap: 2rem;
      height: 9.313rem;
      flex-wrap: wrap;
     
@@ -708,17 +727,17 @@ margin-top: 4.2rem;
 
 } 
 
-.habilidades-tegnologias .tegnologia-figma {
-    width: 9.125rem;
-    transform: rotate(-29deg);
-    margin-top: 2rem;
-    margin-right: 1rem;
+.habilidades-tegnologias .tegnologia-react {
+ 
+     transform: rotate(-29deg); 
+     margin-top: 2rem;
+    margin-right: 1rem; 
 }
 
-.habilidades-tegnologias .tegnologia-git {
-    width: 9.125rem;
-    transform: rotate(-3deg);
-    margin-top: .5rem;
+.habilidades-tegnologias .tegnologia-nextjs {
+   
+    transform: rotate(-3deg); 
+    margin-top: .5rem; 
 
 } 
 .container-ilustracion-habilidades img{
@@ -726,13 +745,14 @@ margin-top: 4.2rem;
     height: 7.5rem;
 }
 .container-ilustracion-habilidades {
-   margin-left: -1rem;
-   margin-top: 8rem;
+   margin-left: 1rem;
+   margin-top: 19rem;
 
 }
 /* -------------------------------- proyectos ------------------------------- */
 .container-proyectos{
     width: 100%;
+    
    
 }
 }
@@ -759,37 +779,37 @@ margin-top: 4.2rem;
     .habilidades-tegnologias{
         gap:.8rem;
     }
-    .habilidades-tegnologias .tegnologia-figma {
+    .habilidades-tegnologias .tegnologia-nextjs {
         width: 9.125rem;
         transform: initial;
         margin-top: initial;
         margin-right: initial;
     }
     
-    .habilidades-tegnologias .tegnologia-git {
+    .habilidades-tegnologias .tegnologia-react {
         width: 9.125rem;
         transform: initial;
         margin-top: initial;
     } 
     
    
-    .habilidades-tegnologias .tegnologia-php {
+    .habilidades-tegnologias .tegnologia-nextjs {
         width: 9.125rem;
-        transform: rotate(-29deg);
+         transform: rotate(-29deg);
         margin-top: 2rem;
-        margin-right: 1rem;
+        margin-right: 1rem; 
     }
     
-    .habilidades-tegnologias .tegnologia-mysql {
+    .habilidades-tegnologias .tegnologia-laravel {
         width: 9.125rem;
-        transform: rotate(-3deg);
-        margin-top: .5rem;
+         transform: rotate(-3deg);
+        margin-top: .5rem; 
     } 
     
     
     .container-ilustracion-habilidades {
-        margin-left: -1rem;
-        margin-top: 16rem;
+        margin-left: 1rem;
+        margin-top: 26rem;
      
      }
 
@@ -872,6 +892,7 @@ margin-top: 4.2rem;
 display: flex;
     padding: 1rem;
     margin-top: 6rem;
+    margin-bottom: 20rem;
    
      
 }
@@ -889,6 +910,9 @@ display: flex;
 .habilidades-tegnologias .tegnologia-figma,
 .habilidades-tegnologias .tegnologia-php,
 .habilidades-tegnologias .tegnologia-mysql,
+.habilidades-tegnologias .tegnologia-react,
+.habilidades-tegnologias .tegnologia-nextjs,
+.habilidades-tegnologias .tegnologia-laravel,
 .habilidades-tegnologias .tegnologia1,
 .habilidades-tegnologias .tegnologia2{
     width: 100%;
@@ -919,13 +943,16 @@ display: flex;
    
 }
 
-.habilidades-tegnologias .tegnologia-php {
+.habilidades-tegnologias .tegnologia-react, 
+.habilidades-tegnologias .tegnologia-laravel, 
+.habilidades-tegnologias .tegnologia-nextjs
+{
    
     transform: initial;
    
 }
 
-.habilidades-tegnologias .tegnologia-mysql {
+.habilidades-tegnologias .tegnologia-laravel {
     
     transform: initial;
     margin-top: 3rem;
@@ -975,5 +1002,20 @@ display: flex;
 .text-carrusel{
    display: none;
 }
+
+/* --------------------------------- footer --------------------------------- */
+.container-footer  {
+   
+    height: 1.425rem;
+    
+
+}
+.container-footer p {
+   
+    font-size: 12px;
+    
+
+}
+
 
 }
